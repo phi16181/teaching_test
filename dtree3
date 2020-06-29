@@ -1,0 +1,32 @@
+digraph Tree {
+node [shape=box] ;
+0 [label="AirTemp <= 76.523\nmse = 70251.26\nsamples = 24595\nvalue = 183.008"] ;
+1 [label="Humidity <= 53.115\nmse = 46100.273\nsamples = 20495\nvalue = 124.684"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="TimeofDay <= 1672.5\nmse = 93467.005\nsamples = 4361\nvalue = 311.417"] ;
+1 -> 2 ;
+3 [label="mse = 81010.14\nsamples = 2859\nvalue = 452.973"] ;
+2 -> 3 ;
+4 [label="mse = 6434.604\nsamples = 1502\nvalue = 41.97"] ;
+2 -> 4 ;
+5 [label="TimeofDay <= 707.5\nmse = 21324.492\nsamples = 16134\nvalue = 74.211"] ;
+1 -> 5 ;
+6 [label="mse = 343.152\nsamples = 6613\nvalue = 8.226"] ;
+5 -> 6 ;
+7 [label="mse = 30772.884\nsamples = 9521\nvalue = 120.042"] ;
+5 -> 7 ;
+8 [label="TimeofDay <= 1637.5\nmse = 88974.943\nsamples = 4100\nvalue = 474.552"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="Humidity <= 72.05\nmse = 45948.647\nsamples = 2764\nvalue = 630.377"] ;
+8 -> 9 ;
+10 [label="mse = 38816.948\nsamples = 2406\nvalue = 662.327"] ;
+9 -> 10 ;
+11 [label="mse = 40911.655\nsamples = 358\nvalue = 415.653"] ;
+9 -> 11 ;
+12 [label="TimeofDay <= 1807.5\nmse = 23825.631\nsamples = 1336\nvalue = 152.171"] ;
+8 -> 12 ;
+13 [label="mse = 17040.007\nsamples = 572\nvalue = 289.297"] ;
+12 -> 13 ;
+14 [label="mse = 4287.679\nsamples = 764\nvalue = 49.505"] ;
+12 -> 14 ;
+}
